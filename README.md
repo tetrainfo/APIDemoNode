@@ -51,8 +51,8 @@ To run the project, navigate to the server folder and
 ```bash
 $  node app.js
 ```
-To test, use these sample urls
-```Postman
+To test, use these sample urls with an tool like Postman at https://www.getpostman.com/n 
+```
 http://localhost:5000/quotes/998 should return a single response for a customer with id = 998
 
 http://localhost:5000/quotes?state=IL should return a list for consumers with state=IL or state="IL"
