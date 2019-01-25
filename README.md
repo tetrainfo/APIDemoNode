@@ -67,7 +67,10 @@ http://localhost:5000/quotes?former_insurer="Monolith Casualty" should return a 
 
 
 ```To Do:
+
 Make the search criteria a bit fuzzier using a wildcard
+Implement real logging using Morgan
+Write tests
 
 ```
 
