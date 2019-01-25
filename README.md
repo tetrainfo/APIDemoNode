@@ -28,13 +28,17 @@ $ git clone https://github.com/tetrainfo/APIDemoNode.git
 then checkout the branch as follow
 
 ```bash
-$ git checkout 'branch_name'
+$ git checkout 'master'
 ```
 
-This project requires you use **node 8.11+**
+This project requires you use **node 8.11+** because of this SLOC in the dataservice:
+
+const json_data = require('../mockdata/auto.leads.json');
 
 Install the following dependencies if required:
+
 --node and npm  https://nodejs.org/en/download/
+
 --yarn https://yarnpkg.com
 
 then add these dependancies
