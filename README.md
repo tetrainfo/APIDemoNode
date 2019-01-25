@@ -31,6 +31,10 @@ then checkout the branch as follow
 $ git checkout 'master'
 ```
 
+```bash
+$ npm init
+```
+
 This project requires you use **node 8.11+** because of this SLOC in the dataservice:
 
 const json_data = require('../mockdata/auto.leads.json');
