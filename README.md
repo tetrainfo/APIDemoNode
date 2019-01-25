@@ -30,14 +30,11 @@ then checkout the branch as follow
 ```bash
 $ git checkout 'master'
 ```
-
-```bash
-$ npm init
-```
-
+===
 This project requires you use **node 8.11+** because of this SLOC in the dataservice:
 
 const json_data = require('../mockdata/auto.leads.json');
+===
 
 Install the following dependencies if required:
 
@@ -45,13 +42,13 @@ Install the following dependencies if required:
 
 --yarn https://yarnpkg.com
 
-then add these dependancies
+then navigate to the server folder and add these dependancies
 
 ```bash
 $ yarn add express morgan body-parser express-promise-router
 ```
 
-To run the project, navigate to the server folder and
+To run the project, navigate to the server folder and enter
 ```bash
 $  node app.js
 ```
