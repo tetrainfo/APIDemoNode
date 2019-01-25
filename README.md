@@ -55,7 +55,7 @@ To run the project, navigate to the server folder and enter
 ```bash
 $  node app.js
 ```
-To test, use these sample urls with an tool like Postman at https://www.getpostman.com/n 
+To test, use these sample urls with an tool like Postman at https://www.getpostman.com 
 ```
 http://localhost:5000/quotes/998 should return a single response for a customer with id = 998
 
