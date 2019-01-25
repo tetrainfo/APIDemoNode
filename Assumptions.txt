@@ -1,0 +1,8 @@
+Assumptions
+
+1. Data by id is unique.
+2. Case or quotes shouldn't matter.
+3. When a record match is found, the entire dataset for that customer should be returned.
+4. Paged response is not required for this demo.
+5. Authentication is not required for access.
+

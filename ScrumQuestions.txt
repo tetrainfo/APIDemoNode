@@ -1,0 +1,5 @@
+Scrum / PM Questions
+
+1. Is there a standard api and api error format I should use?
+2. Should helper info be sent back if data isn't returned in the api?
+
