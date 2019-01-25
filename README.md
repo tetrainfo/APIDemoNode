@@ -30,12 +30,14 @@ then checkout the branch as follow
 ```bash
 $ git checkout 'master'
 ```
+
+```bash
 ----- NOTE---------
 
 This project requires you use **node 8.11+** because of this SLOC in the dataservice:
 
 const json_data = require('../mockdata/auto.leads.json');
--------------------
+```
 
 Install the following dependencies if required:
 
