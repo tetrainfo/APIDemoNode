@@ -1,0 +1,10 @@
+In theory the client could be designed in:
+
+-Flutter
+-React / Axios
+-Vue / Axios
+-Angular 1
+-Angular 4
+
+or whatever comes next.
+
