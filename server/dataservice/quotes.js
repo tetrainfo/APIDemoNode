@@ -91,6 +91,21 @@ var findBy = {
         else {
             return hits;
         }
+    },
+    Pages: pages => {
+        console.log("find pages called => ", [pages]); 
+        var hits = [];
+        for (var i=0; i < json_data.length; i++) {
+            var item = json_data[i];
+            // todo: only push items within a given page range, currently just pushes all
+            hits.push(item);
+        }
+        if (hits.length == 0) {
+            return nadaZipZilch;
+        }
+        else {
+            return hits;
+        }
     }
 }
 
@@ -133,6 +148,16 @@ module.exports = {
             var payload = findBy.Former_Insurer( former_insurer );
         } catch (err) {
             errors.push = {description: "find by former_insurer error " + err};
+        }
+        return { errors, payload };
+    },
+    findByPages: page => {
+        //console.log(`dataservice find by former_insurer called with ${former_insurer}`);
+        try {
+            var errors = [];
+            var payload = findBy.Pages( page );
+        } catch (err) {
+            errors.push = {description: "find by pages error " + err};
         }
         return { errors, payload };
     }

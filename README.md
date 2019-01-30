@@ -65,6 +65,8 @@ http://localhost:5000/quotes?make=ford should return a list for consumers have o
 
 http://localhost:5000/quotes?former_insurer="Monolith Casualty" should return a list for consumers with the specified insurer
 
+http://localhost:5000/quotes? lists all content
+
 
 ```To Do:
 

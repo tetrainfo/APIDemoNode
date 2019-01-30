@@ -5,6 +5,7 @@ module.exports = {
 //express promise router handles general exception
  list: async (req, res, next) => {
     var queryData = url.parse(req.url, true).query;
+    console.log(queryData)
     if(queryData.state) {
         const state = queryData.state.replace(/"/g,"");
         const response = await Dataservice.findByState(state);
@@ -18,6 +19,11 @@ module.exports = {
     else if(queryData.former_insurer) {
         const former_insurer = queryData.former_insurer.replace(/"/g,"");
         const response = await Dataservice.findByFormer_Insurer(former_insurer);
+        res.status(200).json({ response });
+    }
+    //list all pages case
+    else if (isEmpty(queryData)) {
+        const response = await Dataservice.findByPages("all");
         res.status(200).json({ response });
     }
     else {
@@ -34,4 +40,15 @@ module.exports = {
     res.status(200).json({ response });
  }
 
+
+
+}
+
+
+function isEmpty(obj) {
+    for(var key in obj) {
+        if(obj.hasOwnProperty(key))
+            return false;
+    }
+    return true;
 }
